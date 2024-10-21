@@ -15,7 +15,25 @@ Program ini menentukan bilangan terbesar dari serangkaian bilangan yang diinputk
 ## Flowchart Program 
 ![foto](https://github.com/NadhiaShafira/Flowchart-/blob/0f0f9582875c1568c89e0ddeffebc3b3af5ec342/IMG_20241016_072809_1.jpg)
 
+```python
+largest = float('-inf')  # Menginisialisasi Largest dengan -∞
 
+while True:
+    print("Enter 0 to stop")
+    n = float(input("Input a number: "))  # Meminta input dari pengguna
+
+    if n == 0:
+        break  # Keluar dari loop jika input adalah 0
+
+    if n > largest:
+        largest = n  # Update nilai Largest jika n lebih besar
+
+if largest == float('-inf'):
+    print("No numbers were entered.")
+else:
+    print("The largest number is:", largest)
+
+```
 
 ## hasil kode program 
 ![foto](https://github.com/NadhiaShafira/Flowchart-/blob/0f0f9582875c1568c89e0ddeffebc3b3af5ec342/IMG-20241021-WA0011.jpg)
